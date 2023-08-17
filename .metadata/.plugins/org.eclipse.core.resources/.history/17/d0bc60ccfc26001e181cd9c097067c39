@@ -1,0 +1,55 @@
+package gouran;
+
+import java.io.File;
+import java.time.Duration;
+import java.util.Iterator;
+import java.util.Set;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class race {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+
+		WebDriverManager.chromedriver().setup();
+		ChromeOptions options = new ChromeOptions();
+
+		options.addExtensions(new File(System.getProperty("user.dir") + "//src//main//a.crx"));
+		options.addArguments("--remote-allow-origins=*");
+
+		WebDriver wd = new ChromeDriver(options);
+		wd.get("http://16.63.54.123/");
+		
+		wd.manage().window().maximize();
+		wd.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
+		wd.findElement(By.xpath("//*[@id=\"app-content\"]/div/div[1]/div/div/select/option[21]")).click();
+
+		// WebElement race = wd.findElement(By.cssSelector("[class=\"form-control\"]"));
+		// race.sendKeys("0.1");
+		// Set<String> handles = wd1.getWindowHandles();
+		// Iterator<String> handleiterator = handles.iterator();
+
+		String handlechild = null;
+		// String handlechild = handleiterator.next();
+		//
+		wd1.switchTo().window(handlechild);
+		// System.out.println( wd.getTitle());
+
+		// wd1.findElement(By.id("onboarding__terms-checkbox")).click();
+		// wd.findElement(By.cssSelector("[id=\"onboarding__terms-checkbox\"]")).click();
+
+		// WebElement withdraw =
+		// wb.findElement(By.xpath("//*[@id=\"root\"]/div/div/ul/li[2]/a"));
+		// withdraw.click();
+
+	}
+
+}

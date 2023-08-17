@@ -1,0 +1,111 @@
+package mahakal;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class signup {
+
+	private static String number;
+
+	public static void main(String[] args) throws InterruptedException {
+// TODO Auto-generated method stub
+
+
+		WebDriver wb = new ChromeDriver();
+		wb.manage().window().maximize();
+		wb.get("https://testnet.racescan.io/");
+		wb.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
+		//wb.findElement(By.cssSelector("[id=\"navbarBlocksDropdown\"]")).click();
+
+		//wb.findElement(By.cssSelector("[href=\"/blocks\"]")).click();
+
+		//String blocknum = wb.findElement(By.xpath("(//a[@data-selector=\"block-number\"])[1]")).getText();
+
+		//String blocknum1 = blocknum.replace("#", "");
+
+        //wb.navigate().back();
+
+		//wb.findElement(By.cssSelector("[id=\"navbarBlocksDropdown\"]")).click();
+
+		wb.findElement(By.xpath("/html/body/div[1]/main/section/div[3]/div/a")).click();
+
+		//wb.findElement(By.cssSelector("[id=\"navbarBlocksDropdown\"]")).click();
+
+//		wb.findElement(By.xpath("//[@id=\"navbarSupportedContent\"]/ul/li[1]/div/a[3]")).click();
+
+		//wb.findElement(By.xpath("//[@id=\"dark-mode-changer\"]")).click();
+
+		//WebElement Box = wb.findElement(By.xpath("/li/a]"));
+		  //Box.click();
+		
+		wb.findElement(By.xpath("/html/body/div[1]/main/section/div[2]/div/div[5]/div[3]/div/div[2]/span[2]/a[2]/span/span[1]")).click();
+		
+		Thread.sleep(500);
+		
+		wb.findElement(By.xpath("//*[@id=\"tx-raw-input\"]")).click();
+		
+		
+		Thread.sleep(500);
+		
+		wb.findElement(By.xpath("/html/body/div[1]/main/section/section[1]/div[2]/div/div/div/h1/span/span[2]/span")).click();
+		
+		Thread.sleep(500);
+		
+		wb.findElement(By.cssSelector("[class=\"btn btn-primary\"]")).click();
+		
+		wb.findElement(By.cssSelector("[id=\"dropdownMenu2\"]")).click();
+		
+		wb.findElement(By.xpath("//*[@id=\"txs\"]/div/div[2]/div[2]/div/div[1]/div/a[2]")).click();
+		
+		Thread.sleep(500);
+		
+		
+		//wb.findElement(By.cssSelector("#txs > div > div.card-body > div.clearfix > div > div.pagination-container.position-top > ul > li:nth-child(4) > a")).click();
+		//driver.findElement(By.xpath("(//input[@id='search-text'])[2]")).sendKeys("FAA");
+		
+		Thread.sleep(500);
+		
+		wb.findElement(By.xpath("//*[@id=\"address-tabs\"]/a[2]")).click();
+		
+		
+		wb.findElement(By.xpath("//*[@id=\"address-tabs\"]/a[3]")).click();
+		
+		wb.findElement(By.xpath("//*[@id=\"address-tabs\"]/a[4]")).click();
+		
+		wb.findElement(By.xpath("/html/body/div[1]/main/section/section[1]/div[2]/div/div/div/dl[4]/dd/a")).click();
+		
+		wb.findElement(By.xpath("/html/body/div[1]/main/section/section[1]/div[2]/div/div/div/dl[5]/dd/a")).click();
+		
+		wb.findElement(By.xpath("/html/body/div[1]/main/section/section[1]/div[2]/div/div/div/dl[7]/dd")).click();
+		
+		wb.findElement(By.xpath("//*[@id=\"top-navbar\"]/div[1]/a[1]/img")).click();
+		
+		
+		
+		
+		
+
+		//wb.findElement(By.xpath("(//button[@id=\"search-icon\"])[1]")).click();
+
+		//wb.findElement(
+				//By.xpath("//div[@class=\"search-form d-lg-flex d-inline-block mobile-search-hide\"]//div//button"))
+				//.click();
+
+		
+		
+	}
+
+	private static char[] Number() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

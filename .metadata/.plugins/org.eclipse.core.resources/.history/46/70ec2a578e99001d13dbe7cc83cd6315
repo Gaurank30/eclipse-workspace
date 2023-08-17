@@ -1,0 +1,25 @@
+package Maven_Testng.Maven_Testng;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterClass;
+
+public class NewTest {
+	
+	// Maven_Testng.Maven_Testng.NewTest
+  @Test
+  public void f() {
+	  System.out.println("this is my test area");
+  }
+  
+  @BeforeClass
+  public void beforeClass() {
+	  System.out.println("this is my precondition area");
+  }
+
+  @AfterClass
+  public void afterClass() {
+	  System.out.println("this is my postcondition area");
+  }
+
+}
