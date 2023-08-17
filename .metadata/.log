@@ -7667,3 +7667,9 @@ org.eclipse.equinox.p2.core.ProvisionException: No repository found at http://dl
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2023-08-17 17:36:28.893
 !MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-08-17 18:13:08.669
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-08-17 18:13:08.674
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
