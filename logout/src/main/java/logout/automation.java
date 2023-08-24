@@ -14,9 +14,9 @@ public class automation {
 		WebDriver wb = new ChromeDriver();
 		wb.manage().window().maximize();
 		wb.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		wb.get("");
+		wb.get("vimalpatel.com");
 
-		wb.findElement(By.xpath("")).click();
+		
 	}
 
 }
